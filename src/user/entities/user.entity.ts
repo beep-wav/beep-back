@@ -16,10 +16,12 @@ export class User {
 
   @Column({ type: 'int' })
   age: number;
-
   @Column({ type: 'varchar' })
   password: string;
 
   @Column({ type: 'enum', enum: ['m', 'f', 'u'] })
   gender: string;
+
+  @Column({ type: 'boolean' })
+  isActive: boolean;
 }
